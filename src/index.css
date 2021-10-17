@@ -2,8 +2,5 @@ a {
   text-decoration: none;
   border: 2px solid;
   padding: 5px;
-}
-
-body {
-
+  background-color: red;
 }
