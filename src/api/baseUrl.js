@@ -1,6 +1,9 @@
 export default function getBaseUrl() {
-  return getQueryStringParameterByName('userMockApi') ? 'http://localhost:3001/' : '/';
+  return getQueryStringParameterByName('userMockApi') ? 'http/' : 'https://morning-garden-00847.herokuapp.com/';
 }
+
+// return getQueryStringParameterByName('userMockApi') ? 'http://localhost:3001/' : 'https://morning-garden-00847.herokuapp.com/';
+
 
 function getQueryStringParameterByName(name, url) {
   if (!url) url = window.location.href;
