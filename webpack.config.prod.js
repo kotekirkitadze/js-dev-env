@@ -1,13 +1,12 @@
-import path from "path";
 var htmlWebpackPlugin = require("html-webpack-plugin"); // we added this
-
+import path from "path";
 
 export default {
-  mode: "development",
-  devtool: "eval-source-map",
+  mode: "production",
+  devtool: "source-map",
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "src"),
+    path: path.resolve(__dirname, "dist"),
     publicPath: "/",
     filename: "bundle.js",
   },
